@@ -1,0 +1,63 @@
+:root {
+  /* fonts */
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-5xl: 24px;
+  --font-size-xl: 20px;
+  --font-size-lg: 18px;
+  --font-size-21xl: 40px;
+  --font-size-11xl: 30px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-darkslategray: #3f3f3f;
+  --color-navy: #001e96;
+  --color-ghostwhite: #eff1f6;
+  --color-gray-100: #2b2b2b;
+  --color-gray-200: rgba(255, 255, 255, 0.6);
+  --color-gray-300: rgba(43, 43, 43, 0.7);
+  --color-lightsteelblue: #c1c9e9;
+  --color-cornflowerblue: #6478c8;
+  --color-gainsboro: #d9d9d9;
+  --color-whitesmoke: #f5f5f5;
+  --color-dimgray: #6a6a6a;
+
+  /* border radiuses */
+  --br-9xs: 4px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  place-items: center;
+  line-height: normal;
+  font-family: "Inter";
+}
+.ant-layout {
+  background: white;
+}
+h1 {
+  font-size: var(--font-size-21xl);
+  line-height: 50px;
+  text-transform: capitalize;
+  font-weight: 800;
+  color: var(--color-navy);
+}
+h2 {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 50px;
+  font-style: normal;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

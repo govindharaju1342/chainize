@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap");
+/* Base Styling */
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0-1px 10px rgba(0, 0, 0, 0.25);
+  background: white;
+}
+.logo {
+  width: 175px;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 92%;
+  height: 100%;
+  margin: auto;
+}
+
+section {
+  min-height: 100vh;
+}
+section > div {
+  padding: 5vh 0;
+}
+/* Home Section */
+.home {
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+.home-left,
+.home-right {
+  flex-basis: 50%;
+  padding: 1.6rem;
+}
+.home p {
+  color: var(--color-gray-300);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 7% 0;
+}
+
+.home .btn {
+  border-radius: var(--br-9xs) !important;
+  background-color: var(--color-navy) !important;
+
+  width: 300px;
+}
+.home .btn span {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px !important;
+  line-height: 22px;
+}
+/* benefits */
+.gray-section {
+  background: #eff1f6;
+}
+.benefits {
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.benefits p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+.benefits-card {
+  border: none;
+  width: 33%;
+  background: none;
+}
+
+.benefits-card p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+.benefits-card * {
+  text-align: center;
+  width: 100%;
+}
+
+.benefits-item .img {
+  width: 100px;
+  margin: 0 auto;
+}
+.benefits-item {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+.benefits-item div {
+  text-align: center;
+}
+
+/* offerings */
+
+.offerings {
+  background: white;
+  text-align: center;
+}
+
+.ant-carousel .slick-prev,
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-prev:focus {
+  font-size: 20px;
+  font-weight: bolder;
+  left: 20px;
+  z-index: 2;
+  color: white;
+  width: 40px;
+  height: 40px;
+  background: rgba(46, 10, 163, 0.3);
+  padding: 10px;
+}
+
+.ant-carousel .slick-next,
+.ant-carousel .slick-next:hover,
+.ant-carousel .slick-next:focus {
+  font-size: 20px;
+  font-weight: bolder;
+  right: 20px;
+  z-index: 2;
+  color: white;
+  width: 40px;
+  height: 40px;
+  background: rgba(46, 10, 163, 0.3);
+  padding: 10px;
+}
+.group-inner {
+  width: 80%;
+  height: 70vh;
+  margin: 20px 10%;
+  padding: 5%;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: var(--color-white);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.group-inner > div {
+  text-align: left;
+  flex-basis: 50%;
+  padding: 1.6rem;
+}
+.group-inner p {
+  padding: 5% 0;
+}
+
+.group-inner .btn {
+  border-radius: var(--br-9xs) !important;
+  background-color: var(--color-navy) !important;
+
+  min-width: 200px;
+}
+.group-inner .btn span {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px !important;
+  line-height: 22px;
+}
+
+/* Advisors */
+
+.advisors {
+  text-align: center;
+}
+.advisors-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.advisors-list > div {
+  margin: 5%;
+  text-align: left;
+}
+
+.advisors-list h4 {
+  color: --color-gray-100;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.in {
+  width: 15px;
+}
+
+/* Footer */
+footer {
+  padding: 25px 5%;
+  background: #001e96;
+  color: #fff;
+  line-height: 80px;
+  text-align: center;
+}
+.footer-flex {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid white;
+}
+.contact-info {
+  text-align: left;
+  padding: 0 5%;
+  line-height: 40px;
+}
+.contact-info > div {
+  padding: 5% 0;
+}
+.contact-info h4, .subscribe-info h4 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+.footer-flex .ant-input {
+  border-radius: 4px;
+  background: #6478C8;
+  height: 40px;
+  color:#001E96;
+}
+.footer-flex .ant-input::placeholder {
+  font-style: italic;
+  color:#001E96;
+}
+
+.footer-flex .ant-btn { 
+  background: #C1C9E9;
+  color: #001E96;
+  font-weight: bold;
+  height: 40px;
+
+}
+/* Hero Section */
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+    url("images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: whitesmoke;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+  .advisors-list, .footer-flex, .row, .group-inner  {
+    flex-wrap: wrap;
+  }
+  .home-left, .home-right, .footer-flex > div, .benefits-item div, .group-inner > div {
+    flex-basis: 100%
+  }
+  .contact-info {
+    text-align: center;
+  }
+  .group-inner > div {
+    padding: 0;
+  }
+  .offer-img {
+    display: none;
+  }
+  .footer-flex span {
+    line-height: 50px;
+  }
+   
+}

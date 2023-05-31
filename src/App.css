@@ -281,7 +281,7 @@ header {
   .offer-img {
     display: none;
   }
-  .footer-flex span {
+  .footer-flex > span {
     line-height: 50px;
   }
    

@@ -426,9 +426,7 @@ function App() {
                   layout="inline"
                   onFinish={onSubscribe}
                   style={{ width: 415 }}
-                  validateMessages={validateMessages}
-                  labelCol={{ span: 24 }}
-                  wrapperCol={{ span: 24 }}
+                  validateMessages={validateMessages} 
                   autoComplete="off"
                   ref={formTwoRef}
                 >

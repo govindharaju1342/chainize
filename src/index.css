@@ -26,6 +26,9 @@
   /* border radiuses */
   --br-9xs: 4px;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;

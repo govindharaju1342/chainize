@@ -30,6 +30,9 @@ import mike from "./assets/advisors/mike.jpg";
 import arun from "./assets/advisors/arun.jpeg";
 
 import "./App.css";
+const {
+  REACT_APP_BREVO__KEY
+} = process.env;
 
 const layout = {
   labelCol: { span: 8 },
@@ -97,8 +100,7 @@ function App() {
     baseURL: baseUrl,
     headers: {
       accept: "application/json",
-      "api-key":
-        "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",
+      "api-key": REACT_APP_BREVO__KEY,
       "content-type": "application/json",
     },
   });
